@@ -5,13 +5,18 @@
     </head>
     <body>
         <div id="menu">
-            <button id="showMenu" onclick="myFunction(this)">
+            <button id="showMenu" onclick="toggleMenu(this)">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </button>
-            <button id="screenMode">
+            <button id="screenMode" onclick="toggleScreenMode(this)">
                 <img id="screenModeImg" src="src/FullScreenSize.png">
+            </button>
+        </div>
+        <div id="nav">
+            <button id="viewPcbDb" onclick="toggleScreenMode(this)">
+                <img id="screenModeImg" src="src/PCB.png">
             </button>
         </div>
         <div id="main">

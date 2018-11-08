@@ -15,6 +15,15 @@ body {
     background-color: #1e1e1e;
 }
 
+#nav {
+    left: -10vw;
+    position: absolute;
+    background-color: #333;
+    height: 95vh;
+    width: 10vw;
+    transition: 0.4s;
+}
+
 #screenMode {
     width: 3vh;
     height: 3vh;
@@ -23,11 +32,20 @@ body {
     padding: 0;
     float: right;
     background: none;
+    outline: none;
+    display: flex;
+    flex-flow: column;
 }
 
 #screenModeImg {
     width: inherit;
     height: inherit;
+    object-fit: cover;
+}
+
+#viewPcbDbImg {
+    width: 3vh;
+    height: 3vh;
     object-fit: cover;
 }
 
@@ -61,4 +79,8 @@ body {
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-0.55vh, -0.55vh);
     transform: rotate(45deg) translate(-0.55vh, -0.55vh);
+}
+
+.showNav {
+    transform: translateX(10vw);
 }
