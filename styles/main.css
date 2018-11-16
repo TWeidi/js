@@ -16,45 +16,48 @@ body {
 }
 
 #nav {
-    left: -10vw;
+    left: -5vh;
     position: absolute;
     background-color: #333;
     height: 95vh;
-    width: 10vw;
+    width: 5vh;
     display: flex;
     flex-flow: column;
     align-items: center;
     transition: 0.5s;
 }
 
-#screenMode {
+button {
     width: 3vh;
+    max-width: 48px;
     height: 3vh;
+    max-height: 48px;
+    padding: 0;
     margin: 1vh;
     border: 0;
-    padding: 0;
-    float: right;
-    background: none;
     outline: none;
-    display: flex;
-    flex-flow: column;
-}
-
-#screenModeImg {
-    width: inherit;
-    height: inherit;
-    object-fit: cover;
-}
-
-#screenModeImg2 {
-    width: 5vh;
-    height: 5vh;
-    background-color: #ffffff00;
-    padding:0;
-    margin:0;
-    border:0;
+    background: none;
     background-size: cover;
+    background-color: #ffffff00;
 }
+
+#navBtnPCB {
+    background-image:url('../src/PCB.png');
+}
+
+#menuBtnScreen {
+    float: right;
+}
+
+.menuBtnNormalScreen {
+    background-image:url('../src/FullScreenSize.png');    
+}
+
+.menuBtnFullScreen {
+    background-image:url('../src/ReduceScreenSize.png');
+}
+
+
 
 #viewPcbDbImg {
     width: 3vh;
@@ -71,18 +74,11 @@ body {
     border: 0;
 }
 
-#showMenu {
-    width: 3vh;
-    height: 3vh;
-    margin: 1vh;
-    border: 0;
-    padding: 0;
+#navBtn {
     float: left;
-    background: none;
     display: flex;
     flex-flow: column;
     justify-content: space-evenly;
-    outline: none; 
 }
 
 .bar1, .bar2, .bar3 {
@@ -94,7 +90,7 @@ body {
     padding: 0;
 }
 
-#showMenu:hover .bar1, #showMenu:hover .bar2, #showMenu:hover .bar3 {
+#navBtn:hover .bar1, #navBtn:hover .bar2, #navBtn:hover .bar3 {
     filter: brightness(100%);
     cursor: pointer;
 }
@@ -112,12 +108,7 @@ body {
 }
 
 .showNav {
-    transform: translateX(10vw);
-}
-
-button:hover img {
-    filter:  contrast(200%);
-    cursor: pointer;
+    transform: translateX(5vh);
 }
 
 button:hover {
