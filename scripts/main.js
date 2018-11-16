@@ -1,3 +1,4 @@
+"use strict";
 
 window.onload = init;
 
@@ -23,6 +24,9 @@ function init () {
 
 
 
+    // init view(s)
+    import * as pcbView from 'pcbView.js'
+    console.log(pcbView)
 
 }
 
